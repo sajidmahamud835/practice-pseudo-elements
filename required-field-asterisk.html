@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Required Field Asterisk Using Pseudo</title>
+    <!-- cusotm stylesheet -->
+    <style>
+        input[required]::after {
+            color: red;
+            content: "*";
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Pseudo Asrerisk(*) After Required Field</h1>
+    <h2>Using Psudo After CSS in attribute</h2>
+    <form action="">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+    </form>
+</body>
+
+</html>
