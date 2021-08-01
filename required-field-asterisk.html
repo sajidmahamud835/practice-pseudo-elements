@@ -12,18 +12,71 @@
             color: red;
             content: "*";
         }
+
+        #test span+* {
+            display: inline;
+            visibility: hidden;
+        }
+
+        #test span+*::after {
+            visibility: visible;
+            color: white;
+            padding: 2px;
+            content: 'Supporting';
+            background: green;
+        }
     </style>
 </head>
 
 <body>
 
-    <h1>Pseudo Asrerisk(*) After Required Field</h1>
+    <section>
+        <h1>Pseudo Asrerisk(*) After Required Field</h1>
 
-    <form action="">
-        <h2>Using Psudo After CSS in attribute</h2>
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required><span class="required"></span>
-    </form>
-</body>
+        <form action="">
+            <h2>Using Psudo After CSS in attribute</h2>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required><span class="required"></span>
+        </form>
+    </section>
+
+    <section id="test">
+        <h3>Testing which self-Closing tags support pseudo elements</h3>
+        <div>
+            <span>Text Input:</span> <input type="text">
+        </div>
+        <div>
+            <span>Checkbox Input:</span> <input type="checkbox">
+        </div>
+        <div>
+            <span>Radio Input:</span> <input type="radio">
+        </div>
+        <div>
+            <span>Submit Input:</span> <input type="submit">
+        </div>
+        <div>
+            <span>Reset Input:</span> <input type="reset">
+        </div>
+        <div>
+            <span>Button Input:</span> <input type="button">
+        </div>
+        <div>
+            <span>Image:</span> <img>
+        </div>
+        <div>
+            <span>Line Break:</span> <br>
+        </div>
+        <div>
+            <span>Horizontal Rule:</span>
+            <hr>
+        </div>
+        <div>
+            <span>Link:</span>
+            <link>
+        </div>
+        <div><span>Meta:</span>
+            <meta>
+        </div>
+    </section>
 
 </html>
