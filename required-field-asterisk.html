@@ -8,7 +8,7 @@
     <title>Add Required Field Asterisk Using Pseudo</title>
     <!-- cusotm stylesheet -->
     <style>
-        input[required]::after {
+        .required::after {
             color: red;
             content: "*";
         }
@@ -16,11 +16,13 @@
 </head>
 
 <body>
+
     <h1>Pseudo Asrerisk(*) After Required Field</h1>
-    <h2>Using Psudo After CSS in attribute</h2>
+
     <form action="">
+        <h2>Using Psudo After CSS in attribute</h2>
         <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required>
+        <input type="text" id="username" name="username" required><span class="required"></span>
     </form>
 </body>
 
