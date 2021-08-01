@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Quotes</title>
+    <!-- stylesheet -->
+    <style>
+        h2 {
+            color: orange;
+            display: inline-block;
+        }
+
+        h2::after {
+            content: '';
+            display: block;
+            background: magenta;
+            height: 2px;
+            width: 100%;
+        }
+
+        blockquote {
+            font-size: 1.2em;
+        }
+
+        blockquote::before {
+            content: open-quote;
+            font-size: 1.5em;
+            color: magenta;
+        }
+
+        blockquote::after {
+            content: close-quote;
+            font-size: 1.5em;
+            color: magenta;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Best Quotes</h2>
+    <blockquote>Patience, persistence and perspiration make an unbeatable combination for success.</blockquote>
+    <blockquote>Desire is the starting point of all achievement, not a hope, not a wish, but a keen pulsating desire
+        which transcends everything.</blockquote>
+    <blockquote>Strength and growth come only through continuous effort and struggle.</blockquote>
+</body>
+
+</html>
